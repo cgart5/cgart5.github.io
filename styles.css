@@ -95,6 +95,11 @@ body {
     color: var(--primary-color);
 }
 
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
 /* Hero Section */
 .hero {
     padding: 6rem var(--spacing-lg);
