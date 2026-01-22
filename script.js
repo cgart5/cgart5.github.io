@@ -18,32 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Resume Modal Functionality
+// Resume Button Functionality
     const resumeBtn = document.getElementById('resume-btn');
-    const resumeModal = document.getElementById('resume-modal');
-    const resumeModalClose = document.getElementById('resume-modal-close');
 
-    // Open modal when resume button is clicked
+    // Open PDF when resume button is clicked
     if (resumeBtn) {
         resumeBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            resumeModal.classList.add('active');
-        });
-    }
-
-// Close modal when close button is clicked
-if (resumeModalClose) {
-    resumeModalClose.addEventListener('click', () => {
-        resumeModal.classList.remove('active');
-    });
-}
-
-// Close resume modal when clicking outside the modal content
-if (resumeModal) {
-    resumeModal.addEventListener('click', (e) => {
-        if (e.target === resumeModal) {
-            resumeModal.classList.remove('active');
-        }
+            window.open('Resume (2).pdf', '_blank');
     });
 }
 
