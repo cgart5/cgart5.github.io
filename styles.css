@@ -109,7 +109,8 @@ body {
 
 .hero-name-cursive .letter {
     display: inline-block;
-    animation: penWrite 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    opacity: 0;
+    animation: penWrite 0.4s ease-out forwards;
 }
 
 .hero-name-cursive .letter:nth-child(1) { animation-delay: 0.0s; }
