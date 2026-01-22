@@ -797,6 +797,41 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+.projects-title-animated {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.projects-name-cursive {
+    font-family: 'Allura', cursive;
+    font-size: 1em;
+    color: white;
+    display: inline-block;
+}
+
+.projects-name-cursive .letter {
+    display: inline-block;
+    opacity: 0;
+    animation: penWrite 0.4s ease-out forwards;
+}
+
+.projects-name-cursive .letter:nth-child(1) { animation-delay: 0.0s; }
+.projects-name-cursive .letter:nth-child(2) { animation-delay: 0.1s; }
+.projects-name-cursive .letter:nth-child(3) { animation-delay: 0.2s; }
+.projects-name-cursive .letter:nth-child(4) { animation-delay: 0.3s; }
+.projects-name-cursive .letter:nth-child(5) { animation-delay: 0.4s; }
+.projects-name-cursive .letter:nth-child(6) { animation-delay: 0.5s; }
+.projects-name-cursive .letter:nth-child(7) { animation-delay: 0.6s; }
+.projects-name-cursive .letter:nth-child(8) { animation-delay: 0.7s; }
+.projects-name-cursive .letter:nth-child(9) { animation-delay: 0.8s; }
+.projects-name-cursive .letter:nth-child(10) { animation-delay: 0.9s; }
+.projects-name-cursive .letter:nth-child(11) { animation-delay: 1.0s; }
+
+.projects-name-cursive .letter:nth-child(3),
+.projects-name-cursive .letter:nth-child(7) {
+    margin-right: 0.2em;
+}
+
 .projects-header p {
     font-size: 1.1rem;
     opacity: 0.9;
