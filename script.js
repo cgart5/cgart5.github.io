@@ -1,34 +1,35 @@
-// Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href !== '#') {
-            e.preventDefault();
-            const targetElement = document.querySelector(href);
-            if (targetElement) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = targetElement.offsetTop - navbarHeight - 20;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href !== '#') {
+                e.preventDefault();
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - navbarHeight - 20;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
-        }
+        });
     });
-});
 
-// Resume Modal Functionality
-const resumeBtn = document.getElementById('resume-btn');
-const resumeModal = document.getElementById('resume-modal');
-const resumeModalClose = document.getElementById('resume-modal-close');
+    // Resume Modal Functionality
+    const resumeBtn = document.getElementById('resume-btn');
+    const resumeModal = document.getElementById('resume-modal');
+    const resumeModalClose = document.getElementById('resume-modal-close');
 
-// Open modal when resume button is clicked
-if (resumeBtn) {
-    resumeBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        resumeModal.classList.add('active');
-    });
-}
+    // Open modal when resume button is clicked
+    if (resumeBtn) {
+        resumeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            resumeModal.classList.add('active');
+        });
+    }
 
 // Close modal when close button is clicked
 if (resumeModalClose) {
@@ -140,3 +141,4 @@ window.addEventListener('scroll', () => {
 });
 
 console.log('Portfolio loaded successfully!');
+});
