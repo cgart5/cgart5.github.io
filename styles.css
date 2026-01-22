@@ -57,9 +57,24 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
-.logo:hover {
+.logo-name {
+    color: var(--primary-color);
+}
+
+.logo-accent {
+    color: var(--light-text);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.logo:hover .logo-name {
+    color: #0052a3;
+}
+
+.logo:hover .logo-accent {
     color: #0052a3;
 }
 
