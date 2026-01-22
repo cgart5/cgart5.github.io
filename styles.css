@@ -134,14 +134,6 @@ body {
 .hero-name-cursive .letter:nth-child(19) { animation-delay: 1.8s; }
 .hero-name-cursive .letter:nth-child(20) { animation-delay: 1.9s; }
 .hero-name-cursive .letter:nth-child(21) { animation-delay: 2.0s; }
-.hero-name-cursive .letter:nth-child(22) { animation-delay: 2.1s; }
-.hero-name-cursive .letter:nth-child(23) { animation-delay: 2.2s; }
-.hero-name-cursive .letter:nth-child(24) { animation-delay: 2.3s; }
-.hero-name-cursive .letter:nth-child(25) { animation-delay: 2.4s; }
-.hero-name-cursive .letter:nth-child(26) { animation-delay: 2.5s; }
-.hero-name-cursive .letter:nth-child(27) { animation-delay: 2.6s; }
-.hero-name-cursive .letter:nth-child(28) { animation-delay: 2.7s; }
-.hero-name-cursive .letter:nth-child(29) { animation-delay: 2.8s; }
 
 @keyframes penWrite {
     0% {
