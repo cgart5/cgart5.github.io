@@ -101,7 +101,7 @@ body {
 }
 
 .hero-name-cursive {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Allura', cursive;
     font-size: 1.3em;
     color: var(--primary-color);
     display: inline-block;
