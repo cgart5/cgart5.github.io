@@ -17,6 +17,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Resume Modal Functionality
+const resumeBtn = document.getElementById('resume-btn');
+const resumeModal = document.getElementById('resume-modal');
+const resumeModalClose = document.getElementById('resume-modal-close');
+
+// Open modal when resume button is clicked
+if (resumeBtn) {
+    resumeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        resumeModal.classList.add('active');
+    });
+}
+
+// Close modal when close button is clicked
+if (resumeModalClose) {
+    resumeModalClose.addEventListener('click', () => {
+        resumeModal.classList.remove('active');
+    });
+}
+
+// Close resume modal when clicking outside the modal content
+if (resumeModal) {
+    resumeModal.addEventListener('click', (e) => {
+        if (e.target === resumeModal) {
+            resumeModal.classList.remove('active');
+        }
+    });
+}
+
 // Email Modal Functionality
 const emailLink = document.getElementById('email-link');
 const emailModal = document.getElementById('email-modal');

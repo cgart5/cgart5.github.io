@@ -716,6 +716,16 @@ body {
     box-shadow: 0 8px 16px rgba(0, 102, 204, 0.3);
 }
 
+/* Resume Modal */
+.resume-modal-content {
+    max-width: 900px;
+}
+
+.resume-modal-content iframe {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
 .contact-info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
