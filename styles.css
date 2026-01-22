@@ -178,6 +178,146 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+/* Experience Section */
+.experience {
+    background-color: white;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.experience-card {
+    background: #f9f9f9;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 16px rgba(0, 102, 204, 0.1);
+    transform: translateY(-2px);
+}
+
+.exp-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.exp-header h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.exp-company {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.exp-period {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.exp-highlights {
+    list-style: none;
+}
+
+.exp-highlights li {
+    color: var(--light-text);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.exp-highlights li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Education Section */
+.education {
+    background-color: #f9f9f9;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.education-card {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 8px 16px rgba(0, 102, 204, 0.15);
+}
+
+.edu-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.edu-header h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+}
+
+.edu-degree {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.edu-school {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: var(--spacing-md) 0 0.5rem 0;
+}
+
+.edu-period {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.edu-achievements {
+    list-style: none;
+}
+
+.edu-achievements li {
+    color: var(--light-text);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.edu-achievements li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -356,6 +496,14 @@ body {
     }
 
     .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-grid {
         grid-template-columns: 1fr;
     }
 
