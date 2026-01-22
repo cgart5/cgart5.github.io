@@ -111,6 +111,7 @@ body {
     display: inline-block;
     opacity: 0;
     animation: penWrite 0.4s ease-out forwards;
+    letter-spacing: 0.15em;
 }
 
 .hero-name-cursive .letter:nth-child(1) { animation-delay: 0.0s; }
